@@ -1,0 +1,18 @@
+{% extends "inicio/encabezado.html" %}
+
+{% block contenido %}   
+
+<h2> Registrar </h2>
+    <p>Matricula: <input type="text" name="matricula"</p>
+    <p>Nombre: <input type="text" name="nombre"</p>
+    <p>Carrera:
+        <select name="carerra">
+            <option>ING. DGS</option>
+            <option>ING. EVND</option>
+        </select>
+     </p>
+    <input type="radio" name="turno" value="matutino">Matutino
+    <input type="radio" name="turno" value="vespertino">Vespertino
+    <p><input type="Button" name="enviar" value="Enviar"</p>
+
+    {%endblock%}
