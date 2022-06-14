@@ -1,7 +1,32 @@
 
 {% extends "inicio/encabezado.html" %}
+{% block titulo%} Principal {%endblock%}
 
+{%block imagen%}
+    {%load static%}
+    {%static 'inicio/images/home.png'%}
+{%endblock%}
+
+{%block descripcion%}
+   Principal
+{%endblock%}
+{%block mensaje%}DGS{%endblock%}
+   
+{%block encabezado%}
+ <!--Encabezdo -->
+ <div class="page-header">
+    <div class="page-title">
+        <h3>Alumnos
+        <small>Lista de Alumnos 9A</small></h3>
+    </div>
+
+    
+</div>
+<!-- /Encabezado-->
+
+{%endblock%}
 {% block contenido %}        
-<h1>HOLA DJANGO</h1>
+
+
 
 {%endblock%}
